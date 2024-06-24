@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Link from "next/link";
+import NavBar from "./components/Navbar";
 
 
 
@@ -15,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar/>
+        <main className="bg-slate-200 min-h-screen p-16">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
