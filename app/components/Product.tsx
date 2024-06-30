@@ -12,6 +12,10 @@ export default function Product({ product }: ProductProps) {
             </div>
             <div className="flex justify-between font-bold my-3">
                 {product.title}
+                <div>
+                    R${product.price}
+                </div>
+
             </div>
             <button className="rounded-md bg-blue-600 text-white px-3.5 py-2.5 text-sm text-center">
                 Adicionar ao Carrinho
