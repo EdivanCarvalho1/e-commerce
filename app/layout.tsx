@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavBar from "./components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ptBR } from "@clerk/localizations";
+import Footer from "./components/Footer";
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <main className="bg-slate-200 min-h-screen p-16">
             {children}
           </main>
+          <Footer/>
         </body>
       </html>
     </ClerkProvider>
